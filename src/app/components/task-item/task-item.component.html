@@ -1,0 +1,8 @@
+<div class="task" (dblclick)="toggleTask(task)" [ngClass]="{'reminder': task.completed}">
+    <h3>{{ task.title }}
+        <button class="btn btn-sm btn-danger" (click)="deleteTask(task)">
+            <i class="fas fa-times"></i>
+        </button>
+    </h3>
+    <p>{{ task.description }}</p>
+</div>
